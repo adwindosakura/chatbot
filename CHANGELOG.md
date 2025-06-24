@@ -1,6 +1,5 @@
-## 0.0.1
-
-### 🎉 Initial Release
+## 0.0.2
+### 🎉 Second Release
 
 - Added `chatbotLauncher` widget to open a customizable chatbot popup
 - Introduced `chatbotConfig` for full theming and UI customization
