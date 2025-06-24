@@ -25,7 +25,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.0"
-  chatbot:
+  chatbot_launcher:
     dependency: "direct dev"
     description:
       path: ".."

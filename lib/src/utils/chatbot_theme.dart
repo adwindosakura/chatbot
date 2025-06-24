@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ChatbotTheme {
+class chatbotTheme {
   // 🔸 Colors
   static const Color fabColor = Color(0xffF5F4F4);
   static const Color headerOverlayColor = Colors.deepOrange;

@@ -1,4 +1,4 @@
-# 🧠 Flutter Chatbot Package
+# 🧠 Flutter chatbot Package
 
 A lightweight, customizable chatbot launcher widget for Flutter apps. Launch your chatbot with a floating action button and provide a delightful, branded chat experience.
 
@@ -8,7 +8,7 @@ A lightweight, customizable chatbot launcher widget for Flutter apps. Launch you
 
 * 🟢 Easy integration — just plug and play
 * 🎨 Fully customizable header, footer, and chat UI
-* 🧱 Configurable using `ChatbotConfig` object
+* 🧱 Configurable using `chatbotConfig` object
 * 🖼️ Add custom icons, images, colors, and text
 * ⚡ Launch with a Floating Action Button
 * 💬 Built-in layout for chatbot popup window
@@ -51,12 +51,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Chatbot Demo',
+      title: 'chatbot Demo',
       home: Scaffold(
-        appBar: AppBar(title: const Text("Chatbot Example")),
+        appBar: AppBar(title: const Text("chatbot Example")),
         body: const Center(child: Text("Home Screen")),
-        floatingActionButton: ChatbotLauncher(
-          config: ChatbotConfig(
+        floatingActionButton: chatbotLauncher(
+          config: chatbotConfig(
             fabColor: Colors.purple,
             headerTitle: "Hi! Need Help?",
             headerSubtitle: "Ask us anything — we’re here to help.",
@@ -74,10 +74,10 @@ class MyApp extends StatelessWidget {
 
 ## ⚙️ Configuration
 
-Use `ChatbotConfig` to customize everything:
+Use `chatbotConfig` to customize everything:
 
 ```dart
-ChatbotConfig(
+chatbotConfig(
   topMargin: 80.0,
   fabColor: Colors.blueAccent,
   fabIconColor: Colors.white,

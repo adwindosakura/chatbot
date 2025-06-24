@@ -1,11 +1,11 @@
-import 'package:chatbot/src/config/chatbot_config.dart';
+import 'package:chatbot_launcher/src/config/chatbot_config.dart';
 import 'package:flutter/material.dart';
 import 'chatbot_popup.dart';
 
-class ChatbotLauncher extends StatelessWidget {
-  final ChatbotConfig config;
+class chatbotLauncher extends StatelessWidget {
+  final chatbotConfig config;
 
-  const ChatbotLauncher({super.key, this.config = const ChatbotConfig()});
+  const chatbotLauncher({super.key, this.config = const chatbotConfig()});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class ChatbotLauncher extends StatelessWidget {
                 ),
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height - config.topMargin,
-                child: ChatbotPopup(
+                child: chatbotPopup(
                   fabIconColor: config.fabIconColor,
                   headerColor: config.headerColor,
                   headerTitle: config.headerTitle,

@@ -1,5 +1,5 @@
-name: chatbot
-description: "A new Flutter package project."
+name: chatbot_launcher
+description: A customizable chatbot launcher widget for Flutter apps with a popup interface and theming support.
 version: 0.0.1
 homepage: https://github.com/adwindosakura/chatbot.git
 

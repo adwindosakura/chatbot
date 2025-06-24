@@ -1,8 +1,8 @@
-import 'package:chatbot/src/utils/chatbot_assets.dart';
-import 'package:chatbot/src/utils/chatbot_theme.dart';
+import 'package:chatbot_launcher/src/utils/chatbot_assets.dart';
+import 'package:chatbot_launcher/src/utils/chatbot_theme.dart';
 import 'package:flutter/material.dart';
 
-class ChatbotPopup extends StatefulWidget {
+class chatbotPopup extends StatefulWidget {
   final Color headerColor;
   final String headerTitle;
   final String headerSubtitle;
@@ -15,10 +15,10 @@ class ChatbotPopup extends StatefulWidget {
   final Color hintTextColor;
   final Color fabIconColor;
 
-  const ChatbotPopup({
+  const chatbotPopup({
     super.key,
-    this.headerColor = ChatbotTheme.headerOverlayColor,
-    this.fabIconColor = ChatbotTheme.headerOverlayColor,
+    this.headerColor = chatbotTheme.headerOverlayColor,
+    this.fabIconColor = chatbotTheme.headerOverlayColor,
     this.headerTitle = "Hello there! 👋",
     this.headerSubtitle = "Glad you’re here. Feel free to ask us anything.",
     this.headerImage,
@@ -26,15 +26,15 @@ class ChatbotPopup extends StatefulWidget {
     this.poweredByText = "POWERED BY",
     this.poweredByLogo,
     this.poweredByBrand = "SourceBytes.AI",
-    this.sendIconColor = ChatbotTheme.sendIconColor,
-    this.hintTextColor = ChatbotTheme.hintTextColor,
+    this.sendIconColor = chatbotTheme.sendIconColor,
+    this.hintTextColor = chatbotTheme.hintTextColor,
   });
 
   @override
-  State<ChatbotPopup> createState() => _ChatbotPopupState();
+  State<chatbotPopup> createState() => _chatbotPopupState();
 }
 
-class _ChatbotPopupState extends State<ChatbotPopup> {
+class _chatbotPopupState extends State<chatbotPopup> {
   final List<String> _messages = [];
   final TextEditingController _controller = TextEditingController();
 
@@ -74,7 +74,7 @@ class _ChatbotPopupState extends State<ChatbotPopup> {
                       topRight: Radius.circular(20),
                     ),
                     child: Image.asset(
-                      widget.backgroundImage ?? ChatbotAssets.defaultBackground,
+                      widget.backgroundImage ?? chatbotAssets.defaultBackground,
                       package: 'chatbot',
                       fit: BoxFit.cover,
                     ),
@@ -97,19 +97,19 @@ class _ChatbotPopupState extends State<ChatbotPopup> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Image.asset(
-                          widget.headerImage ?? ChatbotAssets.defaultLogo,
+                          widget.headerImage ?? chatbotAssets.defaultLogo,
                           package: 'chatbot',
                           height: 40,
                         ),
                         const SizedBox(height: 10),
                         Text(
                           widget.headerTitle,
-                          style: ChatbotTheme.headerTitleStyle,
+                          style: chatbotTheme.headerTitleStyle,
                         ),
                         const SizedBox(height: 4),
                         Text(
                           widget.headerSubtitle,
-                          style: ChatbotTheme.headerSubtitleStyle,
+                          style: chatbotTheme.headerSubtitleStyle,
                         ),
                       ],
                     ),
@@ -183,7 +183,7 @@ class _ChatbotPopupState extends State<ChatbotPopup> {
                             ),
                             Image.asset(
                               widget.poweredByLogo ??
-                                  ChatbotAssets.defaultPoweredByLogo,
+                                  chatbotAssets.defaultPoweredByLogo,
                               package: 'chatbot',
                               height: 30,
                             ),

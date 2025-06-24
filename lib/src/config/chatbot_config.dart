@@ -1,9 +1,9 @@
 library;
 
-import 'package:chatbot/src/utils/chatbot_theme.dart';
+import 'package:chatbot_launcher/src/utils/chatbot_theme.dart';
 import 'package:flutter/material.dart';
 
-class ChatbotConfig {
+class chatbotConfig {
   /// Margin from the top of the screen when the popup appears.
   final double topMargin;
 
@@ -43,11 +43,11 @@ class ChatbotConfig {
   /// Color of the hint text in the chat input.
   final Color hintTextColor;
 
-  const ChatbotConfig({
+  const chatbotConfig({
     this.topMargin = 100.0,
-    this.fabColor = ChatbotTheme.fabColor,
-    this.fabIconColor = ChatbotTheme.headerOverlayColor,
-    this.headerColor = ChatbotTheme.headerOverlayColor,
+    this.fabColor = chatbotTheme.fabColor,
+    this.fabIconColor = chatbotTheme.headerOverlayColor,
+    this.headerColor = chatbotTheme.headerOverlayColor,
     this.headerTitle = "Hello there! 👋",
     this.headerSubtitle = "Glad you’re here. Feel free to ask us anything.",
     this.headerIcon,
@@ -55,7 +55,7 @@ class ChatbotConfig {
     this.poweredByText = "POWERED BY",
     this.poweredByLogo,
     this.poweredByBrand = "SourceBytes.AI",
-    this.sendIconColor = ChatbotTheme.sendIconColor,
-    this.hintTextColor = ChatbotTheme.hintTextColor,
+    this.sendIconColor = chatbotTheme.sendIconColor,
+    this.hintTextColor = chatbotTheme.hintTextColor,
   });
 }

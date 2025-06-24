@@ -2,8 +2,8 @@
 
 ### 🎉 Initial Release
 
-- Added `ChatbotLauncher` widget to open a customizable chatbot popup
-- Introduced `ChatbotConfig` for full theming and UI customization
+- Added `chatbotLauncher` widget to open a customizable chatbot popup
+- Introduced `chatbotConfig` for full theming and UI customization
 - Supports:
   - Custom FAB color and icon
   - Header title, subtitle, and icon
