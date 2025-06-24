@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:chatbot_launcher/chatbot.dart';
+import 'package:chatbot_launcher/chatbot_launcher.dart';
 
 void main() => runApp(const MyApp());
 
