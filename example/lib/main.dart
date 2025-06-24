@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
             headerTitle: "Hi! Need Help?",
             headerSubtitle: "Ask us anything — we’re here to help.",
             poweredByBrand: "AwesomeTech.AI",
-            poweredByLogo: 'assets/logo.png',
+            // poweredByLogo: 'assets/logo.png',
           ),
         ),
       ),

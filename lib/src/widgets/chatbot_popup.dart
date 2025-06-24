@@ -52,6 +52,7 @@ class _chatbotPopupState extends State<chatbotPopup> {
 
   @override
   Widget build(BuildContext context) {
+    print(chatbotAssets.defaultBackground);
     return Stack(
       children: [
         Column(
@@ -75,7 +76,7 @@ class _chatbotPopupState extends State<chatbotPopup> {
                     ),
                     child: Image.asset(
                       widget.backgroundImage ?? chatbotAssets.defaultBackground,
-                      package: 'chatbot',
+                      package: 'chatbot_launcher',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -98,7 +99,7 @@ class _chatbotPopupState extends State<chatbotPopup> {
                       children: [
                         Image.asset(
                           widget.headerImage ?? chatbotAssets.defaultLogo,
-                          package: 'chatbot',
+                          package: 'chatbot_launcher',
                           height: 40,
                         ),
                         const SizedBox(height: 10),
@@ -184,7 +185,7 @@ class _chatbotPopupState extends State<chatbotPopup> {
                             Image.asset(
                               widget.poweredByLogo ??
                                   chatbotAssets.defaultPoweredByLogo,
-                              package: 'chatbot',
+                              package: 'chatbot_launcher',
                               height: 30,
                             ),
                             Text(
