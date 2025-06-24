@@ -1,6 +1,6 @@
 name: chatbot_launcher
 description: A customizable chatbot launcher widget for Flutter apps with a popup interface and theming support.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/adwindosakura/chatbot.git
 
 environment:
